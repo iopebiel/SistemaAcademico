@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<header>
-    <div class="perfil">
-        <img src="/cadastro_login_pi/templates/foto_perfil.jpg" alt="Foto de Perfil">
-    </div>
-</header>
 
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
     <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -56,6 +95,26 @@
     </style>
 </head>
 <body>
+    <body>
+        <header>
+            <div class="perfil">
+                <img src="/cadastro_login_pi/templates/foto_perfil.jpg" alt="Foto de Perfil">
+                <h1>Nome do Usuário</h1>
+                <p>Curso: Nome do Curso</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Atalho 1</a></li>
+                    <li><a href="#">Atalho 2</a></li>
+                    <li><a href="#">Atalho 3</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="content">
+    </body>
+    </html>
     <div class="welcome-message">
         <h1>Bem-vindo à Página de Início</h1>
         <p>Esta é a nossa página de início. Sinta-se à vontade para explorar!</p>
@@ -72,8 +131,25 @@
     </div>
 
     <div class="section">
-        <h2>Lembretes</h2>
-        <p>Suas entregas e Avaliações.</p>
+        <h2>Minha agenda</h2>
+        <p>E por aqui os compromissos com prazo de entrega.</p>
+        <div class="section">
+            <h2>Lembretes</h2>
+            <ul>
+                <li>Lembrete 1</li>
+                <li>Lembrete 2</li>
+                <li>Lembrete 3</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tarefas e entregas</h2>
+            <ul>
+                <li>Tarefa 1</li>
+                <li>Tarefa 2</li>
+                <li>Tarefa 3</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
